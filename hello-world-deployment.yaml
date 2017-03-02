@@ -1,18 +1,16 @@
-apiVersion: extensions/v1beta1
+apiVersion: v1
 kind: Deployment
-metadata:
+metadata: 
   name: hello-world-deployment
-spec:
+spec: 
   replicas: 2 # tells deployment to run 2 pods matching the template
   template: # create pods using pod definition in this template
-    metadata:
-      labels:
+    metadata: 
+      labels: 
         app: hello-world
-    spec:
-      containers:
+    spec: 
+      containers: 
       - name: node-hello
         image: http://gcr.io/google-samples/node-hello:1.0
-        ports:
+        ports: 
         - containerPort: 80
-
-
