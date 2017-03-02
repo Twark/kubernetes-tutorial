@@ -8,9 +8,9 @@ spec:
     metadata: 
       labels: 
         app: hello-world
-    spec: 
-      containers: 
-      - name: node-hello
-        image: http://gcr.io/google-samples/node-hello:1.0
-        ports: 
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.7.9
+        ports:
         - containerPort: 80
