@@ -15,5 +15,5 @@ spec:
       - name: node-hello
         image: gcr.io/google-samples/node-hello:1.0
         ports:
-        - containerPort: 80
+        - containerPort: 8080
 
