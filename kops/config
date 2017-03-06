@@ -19,3 +19,34 @@ spec:
     name: eu-west-1a
     type: Public
     zone: eu-west-1a
+
+
+---
+
+apiVersion: kops/v1alpha2
+kind: InstanceGroup
+metadata:
+  name: master-eu-west-1a
+spec:
+  image: kope.io/k8s-1.5-debian-jessie-amd64-hvm-ebs-2017-01-09
+  machineType: m3.medium
+  maxSize: 1
+  minSize: 1
+  role: Master
+  subnets:
+  - eu-west-1a
+  
+  ---
+
+apiVersion: kops/v1alpha2
+kind: InstanceGroup
+metadata:
+  name: nodes
+spec:
+  image: kope.io/k8s-1.5-debian-jessie-amd64-hvm-ebs-2017-01-09
+  machineType: t2.medium
+  maxSize: 2
+  minSize: 1
+  role: Node
+  subnets:
+  - eu-west-1a
