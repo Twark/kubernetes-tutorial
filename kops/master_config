@@ -1,7 +1,6 @@
 apiVersion: kops/v1alpha2
 kind: InstanceGroup
 metadata:
-  creationTimestamp: "2017-03-06T17:10:21Z"
   name: master-eu-west-1a
 spec:
   image: kope.io/k8s-1.5-debian-jessie-amd64-hvm-ebs-2017-01-09
