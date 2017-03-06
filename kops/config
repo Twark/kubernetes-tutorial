@@ -4,4 +4,5 @@ metadata:
   name: mycluster.wavetesting.com
 spec:
   cloudProvider: aws
-  regions: eu-west-1a
+  regions: 
+    -name: eu-west-1a
