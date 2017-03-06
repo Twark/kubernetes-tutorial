@@ -4,5 +4,13 @@ metadata:
   name: mycluster.wavetesting.com
 spec:
   cloudProvider: aws
-  zones: 
-    -name: eu-west-1a
+  configBase: s3://kub-wavetesting-com-state-store/mycluster.wavetesting.com
+  etcdClusters:
+  - etcdMembers:
+    - instanceGroup: master-eu-west-1a
+      name: a
+    name: main
+  - etcdMembers:
+    - instanceGroup: master-eu-west-1a
+      name: a
+    name: events
