@@ -5,10 +5,3 @@ metadata:
 spec:
   cloudProvider: aws
   regions: eu-west-1a
-  configBase: s3://kub-wavetesting-com-state-store/mycluster.wavetesting.com
-  masterPublicName: api.mycluster.wavetesting.com
-  topology:
-    dns:
-      type: Public
-    masters: public
-    nodes: public
