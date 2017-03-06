@@ -4,6 +4,7 @@ metadata:
   name: mycluster.wavetesting.com
 spec:
   cloudProvider: aws
+  region: eu-west-1
   configBase: s3://kub-wavetesting-com-state-store/mycluster.wavetesting.com
   masterPublicName: api.mycluster.wavetesting.com
   topology:
