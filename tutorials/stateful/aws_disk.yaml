@@ -2,8 +2,14 @@ apiVersion: v1
 kind: PersistentVolume
 metadata:
   name: mysql-pv
+context:
+  
 spec:
   capacity:
     storage: 20Gi
   accessModes:
     - ReadWriteOnce
+  awsElasticBlockStore:
+    # Enter the volume ID below
+    volumeID: vol-038097f4442360579
+    fsType: ext4
