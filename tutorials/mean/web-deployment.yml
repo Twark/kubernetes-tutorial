@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: web-deployment
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        name: web
+    spec:
+      containers:
+      - image: 319756153324.dkr.ecr.eu-west-1.amazonaws.com/myapp
+        name: web
+        ports:
+        - name: http-server
+          containerPort: 3000
