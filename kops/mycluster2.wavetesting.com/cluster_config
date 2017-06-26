@@ -10,28 +10,22 @@ spec:
   configBase: s3://kub-wavetesting-com-state-store/mycluster2.wavetesting.com
   etcdClusters:
   - etcdMembers:
-    - instanceGroup: master-eu-west-1a
+    - instanceGroup: master2-eu-west-1a
       name: a
     name: main
   - etcdMembers:
-    - instanceGroup: master-eu-west-1a
+    - instanceGroup: master2-eu-west-1a
       name: a
     name: events
   kubernetesApiAccess:
   - 0.0.0.0/0
   kubernetesVersion: 1.5.2
-  masterPublicName: api.mycluster.wavetesting.com
-  networkCIDR: 172.20.0.0/16
+  masterPublicName: api.mycluster2.wavetesting.com
   networking:
     kubenet: {}
   nonMasqueradeCIDR: 100.64.0.0/10
   sshAccess:
   - 0.0.0.0/0
-  subnets:
-  - cidr: 172.20.32.0/19
-    name: eu-west-1a
-    type: Public
-    zone: eu-west-1a
   topology:
     dns:
       type: Public
