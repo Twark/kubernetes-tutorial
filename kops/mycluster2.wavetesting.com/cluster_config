@@ -23,7 +23,6 @@ spec:
   masterPublicName: api.mycluster2.wavetesting.com
   networking:
     kubenet: {}
-  nonMasqueradeCIDR: 100.64.0.0/10
   sshAccess:
   - 0.0.0.0/0
   subnets:
