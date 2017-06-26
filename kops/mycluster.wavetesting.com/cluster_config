@@ -21,17 +21,10 @@ spec:
   - 0.0.0.0/0
   kubernetesVersion: 1.5.2
   masterPublicName: api.mycluster.wavetesting.com
-  networkCIDR: 172.20.0.0/16
   networking:
     kubenet: {}
-  nonMasqueradeCIDR: 100.64.0.0/10
   sshAccess:
   - 0.0.0.0/0
-  subnets:
-  - cidr: 172.20.32.0/19
-    name: eu-west-1a
-    type: Public
-    zone: eu-west-1a
   topology:
     dns:
       type: Public
