@@ -5,11 +5,11 @@ metadata:
 spec:
   api:
     dns: {}
+  authorization: 
+    rbac: {}
   channel: stable
   cloudProvider: aws
   configBase: s3://kub-wavetesting-com-state-store/mycluster.wavetesting.com
-  authorization: 
-    RBAC: {}
   etcdClusters:
   - etcdMembers:
     - instanceGroup: master-eu-west-1a
