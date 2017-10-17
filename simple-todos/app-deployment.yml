@@ -1,0 +1,17 @@
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: app-deployment
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        name: app
+    spec:
+      containers:
+      - image: 319756153324.dkr.ecr.eu-west-1.amazonaws.com/simple-todos
+        name: app
+        ports:
+        - name: http-server
+          containerPort: 3000
